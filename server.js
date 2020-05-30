@@ -146,3 +146,37 @@ const swaggerOptions = {
  *    '400':
  *      description: Invalid username/password supplied
  */
+
+ /**
+ * @swagger
+ * /api/users:
+ *  post:
+ *   tags:
+ *    - Register
+ *   summary: Register user
+ *   operationId: RegisterUser
+ *   parameters:
+ *    - name: name
+ *      in: query
+ *      description: The user name
+ *      required: true
+ *      schema:
+ *       type: string
+ *    - name: email
+ *      in: query
+ *      description: The user name for login
+ *      required: true
+ *      schema:
+ *       type: string
+ *    - name: password
+ *      in: query
+ *      description: The password for login in clear text
+ *      required: true
+ *      schema:
+ *       type: string
+ *   responses:
+ *    '200':
+ *      description: successful operation
+ *    '400':
+ *      description: Invalid username/password supplied
+ */
